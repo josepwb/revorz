@@ -1,20 +1,13 @@
-const fs = require('fs');
-const keys = require('./keys.json');
-const key = keys.imageAPIKeys;
-const token = keys.botToken;
-const Discord = require("discord.js");
-const XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
-const client = new Discord.Client({disableEveryone: true, autoReconnect:true});
-const DBL = require("dblapi.js");
-const dbl = new DBL(keys.discordbotsToken, client);
+const Discord = require('discord.js');
+const client = new Discord.Client();
 
 client.on('ready', () => {
     console.log('I am ready!');
 });
 
 client.on('message', message => {
-    if (message.content === 'ping') {
-    	message.channel.send('PONG!');
+    if (message.content === '!help') {
+    	message.channel.send('I just testing add a bot diarmuid :V');
   	}
 });
 
