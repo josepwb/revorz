@@ -1,2 +1,2 @@
-# revorz
-revolution raiderz discord bot
+# RevoTime
+Discord to Calc the Online Time
